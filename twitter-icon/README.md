@@ -1,2 +1,2 @@
-## twitter-icon
+# twitter icon
 ![Alt text](demo.gif)
