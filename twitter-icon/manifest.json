@@ -1,0 +1,11 @@
+{
+  "name": "twitter icon",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "twitterのアイコンを拡大します",
+
+  "content_scripts": [{
+    "matches": ["https://twitter.com/*"],
+    "js": ["jquery-1.11.3.min.js","content.js"]
+  }]
+}
