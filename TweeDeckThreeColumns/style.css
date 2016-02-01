@@ -1,0 +1,22 @@
+.column{
+  width: 750px !important;
+}
+
+.chirp-container{
+  font-size: 0px;
+  display:-webkit-box;
+  display:-webkit-flexbox;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-box-lines:multiple;
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+
+.stream-item{
+  width: 250px;
+  font-size: 12px;
+  display: inline-block;
+  border: 1px solid #999 !important;
+  box-sizing: border-box;
+}
