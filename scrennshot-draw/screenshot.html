@@ -1,0 +1,31 @@
+<html>
+<charset="UTF-8">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="screenshot.js" charset="UTF-8"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+  <div id="content">
+    <div id="title-area" style="display:none;"><textarea id="title-text"></textarea></div>
+    <div id="relative-div" style="position: relative;">
+      <canvas id="mycanvas"></canvas>
+      <div style="position: absolute; top: 0px; left: 0px;">
+        <!-- <strong>Start coordinates:</strong><span id="start"></span>
+        <strong>End coordinates:</strong><span id="end"></span> -->
+        <div id="selection"></div>
+      </div>
+    </div>
+    <div id="color-area" style="display:none;">
+      <button style="background-color:black;"></button>
+      <button style="background-color:white;"></button>
+      <button style="background-color:red;"></button>
+      <button style="background-color:blue;"></button>
+      <button style="background-color:green;"></button>
+    </div>
+    <div id="button-area" style="display:none;">
+      <button id="save-button" class="command-button">save</button>
+      <button id="delete-button" class="command-button">delete</button>
+      <button id="undo-button" class="command-button">undo</button>
+    </div>
+  </div>
+</body>
+</html>

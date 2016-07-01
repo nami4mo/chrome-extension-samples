@@ -1,0 +1,25 @@
+{
+  "name": "screenshot with drawing",
+  "version": "1.1",
+  "manifest_version": 2,
+
+  "description": "スクショーーー",
+
+  "permissions":[
+    "activeTab","tabs","<all_urls>","contextMenus"
+  ],
+
+  "background":{
+    "scripts":["jquery-1.11.3.min.js","background.js"]
+  },
+
+  "content_scripts": [{
+    "matches": ["http://*/*","https://*/*"],
+    "js": ["jquery-1.11.3.min.js","jquery-ui.min.js","content.js"]
+  }],
+
+  "browser_action":{
+    "default_icon": "icon19.png",
+    "default_title": "clipper1"
+  }
+}
