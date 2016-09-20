@@ -1,0 +1,32 @@
+{
+  "name": "TweetDeck3",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "ミュート",
+
+  "permissions":[
+    "activeTab"
+  ],
+
+  "web_accessible_resources": [
+    "button.png"
+  ],
+
+  "permissions":[
+    "tabs", "https://tweetdeck.twitter.com/*"
+  ],
+
+  "background":{
+    "scripts":["jquery-1.11.3.min.js","background.js"]
+  },
+
+  "page_action":{
+    "default_icon": "button.png",
+    "default_title": "TweetDeckColumns"
+  },
+
+  "content_scripts": [{
+    "matches": ["https://tweetdeck.twitter.com/*"],
+    "js": ["jquery-1.11.3.min.js","content.js"]
+  }]
+}

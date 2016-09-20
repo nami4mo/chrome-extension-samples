@@ -1,0 +1,11 @@
+{
+  "name": "TweetDeck2",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "TweetDeckに一時的なミュート機能追加",
+
+  "content_scripts": [{
+    "matches": ["https://tweetdeck.twitter.com/*"],
+    "js": ["jquery-1.11.3.min.js","content.js"]
+  }]
+}
